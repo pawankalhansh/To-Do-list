@@ -50,7 +50,23 @@ npm run preview
 
 ## Deployment
 
-This app can be deployed to GitHub Pages. After building, the `dist` folder contains the production-ready files.
+This app can be deployed to GitHub Pages.
+
+1. Create a new repository on GitHub.
+2. Push this code to the repository:
+   ```bash
+   git remote add origin https://github.com/your-username/your-repo-name.git
+   git branch -M main
+   git push -u origin main
+   ```
+3. Build and deploy:
+   ```bash
+   npm run build
+   npm run deploy
+   ```
+4. Enable GitHub Pages in the repository settings, selecting the `gh-pages` branch as the source.
+
+The app will be available at `https://your-username.github.io/your-repo-name/`
 
 ## Technologies Used
 
